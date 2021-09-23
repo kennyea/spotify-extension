@@ -1,0 +1,28 @@
+{
+  "name": "Spotify song list",
+  "description": "Grab your Discover Weekly songs!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://open.spotify.com/*"],
+      "js": ["./main.js"]
+    }
+  ],
+  "permissions": ["storage", "activeTab", "scripting", "tabs"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/dumbo.png",
+      "32": "/images/dumbo.png",
+      "48": "/images/dumbo.png",
+      "128": "/images/dumbo.png"
+    }
+  },
+  "icons": {
+    "16": "/images/dumbo.png",
+    "32": "/images/dumbo.png",
+    "48": "/images/dumbo.png",
+    "128": "/images/dumbo.png"
+  }
+}
